@@ -1,0 +1,108 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d7367a8ca0b77cff51e1fac29b682e03",
+    "packages": [
+        {
+            "name": "duckfusion/waddle",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cwarwicker/Waddle.git",
+                "reference": "fe47eb512e1df6db1d36e3d4cab95af85cf49c76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cwarwicker/Waddle/zipball/fe47eb512e1df6db1d36e3d4cab95af85cf49c76",
+                "reference": "fe47eb512e1df6db1d36e3d4cab95af85cf49c76",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "php": ">=7.0.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Waddle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Conn Warwicker"
+                }
+            ],
+            "description": "PHP Library for parsing running GPS activities and calculating metrics",
+            "keywords": [
+                "gps",
+                "gpx",
+                "parse",
+                "pwx",
+                "running",
+                "tcx"
+            ],
+            "time": "2020-09-30T19:17:39+00:00"
+        },
+        {
+            "name": "sibyx/phpgpx",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Sibyx/phpGPX.git",
+                "reference": "e8841db16e751a8968a8c0cdc48100cd74407c3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Sibyx/phpGPX/zipball/e8841db16e751a8968a8c0cdc48100cd74407c3d",
+                "reference": "e8841db16e751a8968a8c0cdc48100cd74407c3d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-simplexml": "*",
+                "lib-libxml": "*",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "evert/phpdoc-md": "~0.2.0",
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "phpunit/phpunit": "^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpGPX\\": "src/phpGPX/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Dubec",
+                    "email": "jakub.dubec@gmail.com",
+                    "homepage": "https://jakubdubec.me"
+                }
+            ],
+            "description": "A simple PHP library for GPX import/export",
+            "time": "2021-02-28T19:29:40+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

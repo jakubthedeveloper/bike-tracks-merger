@@ -1,0 +1,6 @@
+{
+    "require": {
+        "sibyx/phpgpx": "1.1.2",
+        "duckfusion/waddle": "^1.1"
+    }
+}
