@@ -20,3 +20,7 @@ Merges all GPX files from folder gpx/ into one file out/merged.gpx
 ```shell
 php merge.php
 ```
+
+## Example result
+
+![Merged tracks](screenshot/output.png)
