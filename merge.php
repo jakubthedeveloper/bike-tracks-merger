@@ -9,6 +9,8 @@ $gpxFile->metadata = new \phpGPX\Models\Metadata();
 $gpxFile->metadata->time = new \DateTime();
 $gpxFile->metadata->description = "Merged GPXes.";
 
+$totalDistance = 0;
+
 $handle = opendir('gpx');
 while (false !== ($fileName = readdir($handle))) {
     if (substr($fileName, -4) === '.gpx') {
@@ -17,6 +19,8 @@ while (false !== ($fileName = readdir($handle))) {
         echo "Merging {$fileName}\n";
 
         foreach ($file->tracks as $track) {
+            $track->recalculateStats();
+            $totalDistance += $track->stats->distance;
             $gpxFile->tracks[] = $track;
         }
     }
@@ -24,3 +28,5 @@ while (false !== ($fileName = readdir($handle))) {
 
 // GPX output
 $gpxFile->save('out/merged.gpx', \phpGPX\phpGPX::XML_FORMAT);
+
+echo "Total distance: " . number_format($totalDistance / 1000, 2) . "km\n";
