@@ -24,3 +24,7 @@ php merge.php
 ## Example result
 
 ![Merged tracks](screenshot/output.png)
+
+## Blog
+
+[[PL] Artykuł: Scalenie tras rowerowych z plików .gpx i .tcx w PHP.](https://programisty-dzien-powszedni.pl/scalenie-tras-rowerowych-z-plikow-gpx-i-tcx-w-php/)
