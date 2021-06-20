@@ -7,7 +7,7 @@ while (false !== ($fileName = readdir($handle))) {
     $outPath = 'gpx/converted_from_tcx_' . substr($fileName, 0, -4) . '.gpx';
     if (substr($fileName, -4) === '.tcx' && !file_exists($outPath)) {
         $parser = new \Waddle\Parsers\TCXParser();
-        $activity = $parser->parse('tcx/fixed/test.tcx');
+        $activity = $parser->parse("tcx/fixed/{$fileName}");
 
         $track = new \phpGPX\Models\Track();
         $segment = new \phpGPX\Models\Segment();
@@ -28,8 +28,6 @@ while (false !== ($fileName = readdir($handle))) {
 
         $gpx_file = new \phpGPX\Models\GpxFile();
         $gpx_file->tracks[] = $track;
-        //var_dump($outPath); die();
-        // XML
         $gpx_file->save($outPath, \phpGPX\phpGPX::XML_FORMAT);
     }
 }
