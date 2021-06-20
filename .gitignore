@@ -1,0 +1,6 @@
+gpx/*.gpx
+tcx/*.tcx
+tcx/fixed/*.tcx
+out/merged.gpx
+.idea
+vendor/
